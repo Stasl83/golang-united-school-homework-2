@@ -10,7 +10,7 @@ const (
 	SidesSquare   intMyCustomType = 4
 )
 
-func CalcSquere(sideLen float64, sidesNum intMyCustomType) float64 {
+func CalcSquare(sideLen float64, sidesNum intMyCustomType) float64 {
 
 	switch sidesNum {
 	case SidesCircle:
