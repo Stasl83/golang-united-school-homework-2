@@ -6,9 +6,9 @@ type intMyCustomType = int
 
 func CalcSquere(sideLen float64, sidesNum intMyCustomType) float64 {
 	const (
-		c0 = 0
-		c3 = 3
-		c4 = 4
+		c0 intMyCustomType = 0
+		c3 intMyCustomType = 3
+		c4 intMyCustomType = 4
 	)
 	switch sidesNum {
 	case c0:
