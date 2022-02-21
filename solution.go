@@ -4,12 +4,14 @@ import "math"
 
 type intMyCustomType = int
 
+const (
+	c0 intMyCustomType = 0
+	c3 intMyCustomType = 3
+	c4 intMyCustomType = 4
+)
+
 func CalcSquere(sideLen float64, sidesNum intMyCustomType) float64 {
-	const (
-		c0 intMyCustomType = 0
-		c3 intMyCustomType = 3
-		c4 intMyCustomType = 4
-	)
+
 	switch sidesNum {
 	case c0:
 		return math.Pi * sideLen * sideLen
