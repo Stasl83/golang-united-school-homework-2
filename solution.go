@@ -5,19 +5,19 @@ import "math"
 type intMyCustomType = int
 
 const (
-	c0 intMyCustomType = 0
-	c3 intMyCustomType = 3
-	c4 intMyCustomType = 4
+	SidesCircle   intMyCustomType = 0
+	SidesTriangle intMyCustomType = 3
+	SidesSquare   intMyCustomType = 4
 )
 
 func CalcSquere(sideLen float64, sidesNum intMyCustomType) float64 {
 
 	switch sidesNum {
-	case c0:
+	case SidesCircle:
 		return math.Pi * sideLen * sideLen
-	case c3:
+	case SidesTriangle:
 		return math.Sqrt(3) * sideLen * sideLen / 4
-	case c4:
+	case SidesSquare:
 		return sideLen * sideLen
 	default:
 		return 0
